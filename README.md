@@ -3,6 +3,16 @@
 official code of Doubly Robust Causal Effect Estimation on Networked Data via
 Targeted Learning [[paper]](https://icml.cc/virtual/2024/oral/35570)
 
+# run
+```
+./sh run.sh 1
+```
+where 1 means using dataset BC, and 2, 3, 4, 5, 6 mean using BC_hete, Flickr, Flickr_hete, BC_hete_z, Flickr_hete_z, respectively.
+And the __suggested hyperparameters__ are included in the file run.sh.
+
+# dataset
+Please find the dataset in [[NetEst]](https://github.com/songjiang0909/Causal-Inference-on-Networked-Data). Thanks for their datasets!
+
 # Cite this paper
 
 Chen, W., Cai, R., Yang, Z., Qiao, J., Yan, Y., Li, Z. &amp; Hao, Z.. (2024). Doubly Robust Causal Effect Estimation under Networked Interference via Targeted Learning. <i>Proceedings of the 41st International Conference on Machine Learning</i>, in <i>Proceedings of Machine Learning Research</i> 235:6457-6485
@@ -24,3 +34,6 @@ Chen, W., Cai, R., Yang, Z., Qiao, J., Yan, Y., Li, Z. &amp; Hao, Z.. (2024). Do
   abstract = 	 {Causal effect estimation under networked interference is an important but challenging problem. Available parametric methods are limited in their model space, while previous semiparametric methods, e.g., leveraging neural networks to fit only one single nuisance function, may still encounter misspecification problems under networked interference without appropriate assumptions on the data generation process. To mitigate bias stemming from misspecification, we propose a novel doubly robust causal effect estimator under networked interference, by adapting the targeted learning technique to the training of neural networks. Specifically, we generalize the targeted learning technique into the networked interference setting and establish the condition under which an estimator achieves double robustness. Based on the condition, we devise an end-to-end causal effect estimator by transforming the identified theoretical condition into a targeted loss. Moreover, we provide a theoretical analysis of our designed estimator, revealing a faster convergence rate compared to a single nuisance model. Extensive experimental results on two real-world networks with semisynthetic data demonstrate the effectiveness of our proposed estimators.}
 }
 ```
+
+# Thanks
+Our code partly follows the code from [[RRNet]](https://github.com/DMIRLAB-Group/RRNet) and [[NetEst]](https://github.com/songjiang0909/Causal-Inference-on-Networked-Data). Thanks for their code!
